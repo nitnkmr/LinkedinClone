@@ -71,6 +71,16 @@ font-size: smaller;
 
 
 }
+
+@media only  screen and (max-width:1024px) {
+    .navbarChild2{
+        display: none;
+    }
+    .navbarChild1{
+        width: 50%;
+    }
+    
+}
 .navbarChild2 ul{
     list-style: none;
     height: 100%;
@@ -79,6 +89,7 @@ font-size: smaller;
     justify-content: space-around;
     
 }
+
 @media only screen and (max-width: 1000px) {
     .navbarChild2 ul {
     list-style: none;
@@ -183,6 +194,7 @@ font-size: smaller;
     display: flex;
     flex-direction: column;
 }
+
 .extraLinks>a{
     text-decoration: none;
     color: brown;
@@ -190,6 +202,21 @@ font-size: smaller;
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+@media only screen and (max-width:1024px){
+    .extraLinks{
+        font-size: .8rem;
+    }
+    
+}
+@media only screen and (max-width:540px){
+    .extraLinks{
+        display: none;
+    }
+    .navbarChild1{
+        width: 80%;
+    }
+    
 }
 .work{
     width: 100%;
@@ -341,6 +368,20 @@ font-size: smaller;
 
 }
 
+
+@media only screen and (max-width:1131px) {
+    .leftside{
+        display: none;
+    }
+    .rightside{
+        display: none;
+    }
+    .centersideTop{
+        width: 50%;
+    }
+    
+}
+
 /* ************************Aside Center**************** */
 .centerside{
     border-radius:5px;
@@ -352,9 +393,8 @@ font-size: smaller;
 }
 .centersideTop{
     border-radius:5px;
-    background-color: rgb(249, 245, 245);
-    
-    height: 10%;
+    background-color: rgb(249, 245, 245); 
+    max-height: 10%;
     width: 100%;
    
 }
@@ -410,7 +450,25 @@ font-size: smaller;
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+@media only screen and (max-width:1000px) {
+.mediaSection >ul>li>a{
+    height: 15%;
+    font-size: 0.6rem;
+}
+ 
+}
+@media only screen and (min-width:700px) {
+.mediaSection >ul>li>a{
+    height: 15%;
+    font-size: 0.9rem;
+}
+/* .centerside{
+    width: 85%;
+    height: 80%;
+} */
+  
 }
 .mediaSection >ul>li>a:hover{
     text-decoration: none;
@@ -482,13 +540,13 @@ font-size: smaller;
     border-radius:5px;
     height: 40%;
     width: 100%;
-    margin:  1% 0;
+    margin:  5px 0;
 }
 .card{
+    border:1px solid black;
     background-color: rgb(249, 245, 245);
-
     border-radius:5px;
-    height: 100%;
+    width: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -655,4 +713,35 @@ font-size: smaller;
 }
 #logo12{
     width: 20%;
+}
+
+@media only screen and (min-width:1300px) {
+    .card{
+       height: 100%;
+    }
+    
+}
+@media only screen and (max-width:700px) {
+    .centerside{
+        width: 90%;
+        height: 100%;
+    }
+    
+}
+@media only screen and (max-width:490px) {
+    .card{
+        font-size: 0.7rem;
+        height: 100%;
+        
+    }
+.nameAndPhoto>.div2>p{
+  width: 90%;
+}
+.cardResponse>ul>li>a{
+    font-size: 0.5rem;
+}
+.newsfeed{
+    height: 30%;
+}
+    
 }
